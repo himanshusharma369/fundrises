@@ -5,7 +5,8 @@ import UserLogin from "./UserLogin";
 import Profile from "./Profile";
 import Footer from "./components/Footer";
 
-const API_BASE = "http://localhost:5000/api";
+import API_BASE_URL from "./config";
+const API_BASE = API_BASE_URL;
 
 // ── DECODE JWT ────────────────────────────────────────────────
 function parseJwt(token) {

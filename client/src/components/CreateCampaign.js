@@ -18,7 +18,7 @@ function CreateCampaign() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/campaign/create",
+        `${process.env.REACT_APP_API_URL}/campaign/create`,
         {
           title,
           description,

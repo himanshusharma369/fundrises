@@ -7,7 +7,7 @@ function Profile({ token }) {
   useEffect(() => {
     if (token) {
       axios
-        .get("http://localhost:5000/api/campaign/my-campaigns", {
+        .get(`${process.env.REACT_APP_API_URL}/campaign/my-campaigns`, {
           headers: {
             Authorization: `Bearer ${token}`, // ✅ FIX
           },

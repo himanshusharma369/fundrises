@@ -15,8 +15,8 @@ function UserLogin({ setToken, setUser, goToAdminLogin }) {
     setLoading(true);
     try {
       const endpoint = isRegister
-        ? "http://localhost:5000/api/auth/register"
-        : "http://localhost:5000/api/auth/login";
+        ? `${process.env.REACT_APP_API_URL}/auth/register`
+        : `${process.env.REACT_APP_API_URL}/auth/login`;
 
       const payload = isRegister
         ? { name, email, password, role: "user" }

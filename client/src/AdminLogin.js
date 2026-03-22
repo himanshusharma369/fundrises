@@ -13,7 +13,7 @@ function AdminLogin({ setToken, setUser, goToUserLogin }) {
 
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", { email, password });
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/auth/login`, { email, password });
 
       if (!res.data.token) return setError("Auth failed ❌");
 
