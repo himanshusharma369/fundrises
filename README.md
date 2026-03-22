@@ -1,3 +1,2 @@
-# Fund Collection (MERN)
-
-Industry-level starter folder structure.
+# fundrises
+it's good website for donation
